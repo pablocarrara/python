@@ -18,7 +18,7 @@ class Book():
         if(self.title == other.title and self.pages == other.pages):
             return True
     
-    #It's approriate to give something for __hash__ when you override __eq__
+    #It's appropriate to give something for __hash__ when you override __eq__
     # #This is the recommended way if mutable (like it is here):
     __hash__ = None
 
