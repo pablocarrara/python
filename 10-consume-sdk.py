@@ -31,7 +31,7 @@ while(True):
 #Should deleting/updating a book require book object or just title? ID? So many options
 #Not very easy to maintain object as you might easily do with a UI.
 
-import booksSDK
+import bookSDK
 from book import Book
 
 print("Hello, Welcome to your reading list.")
@@ -40,20 +40,20 @@ while(True):
     response = int(input())
     if response == 1:
         print("Here are all of your books:")
-        for book in booksSDK.get_books():
+        for book in bookSDK.get_books():
             print(book)
     elif response == 2:
         print("Title?")
         title = input()
         print("Pages?")
         pages = input()
-        booksSDK.add_book(Book(title, pages))
+        bookSDK.add_book(Book(title, pages))
     elif response == 3:
         print("Title?")
         title = input()
         print("Pages?")
         pages = input()
-        booksSDK.delete_book(Book(title, pages))
+        bookSDK.delete_book(Book(title, pages))
     elif response == 4:
         print("Current title?")
         current_title = input()
@@ -67,7 +67,7 @@ while(True):
         new_pages = input()
         if str.lower(new_pages) == 's':
             new_pages = current_pages
-        booksSDK.update_book(Book(current_title, current_pages), new_title, new_pages)
+        bookSDK.update_book(Book(current_title, current_pages), new_title, new_pages)
     else:
         print("Good luck reading!")
         break
