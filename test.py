@@ -1,13 +1,7 @@
 figuritas = ['hulk','hulk', 'lebron james','hulk', 'lebron james','hulk', 'la mujer maravilla',
  'la mujer bionica', 'el hombre araña', 'lebron james', 'hulk']
 
-data = [1,2,3,4,5,6,7,8,9]
-
-for index in range((len(data) // 2)):
-    data[index], data[-index - 1] = data[-index - 1], data[index]
-
-print(data)
-
+print (figuritas.reverse())
 
 
 # for item in reversed(range(7)):
