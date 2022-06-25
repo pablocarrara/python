@@ -1,22 +1,30 @@
 figuritas = ['hulk','hulk', 'lebron james','hulk', 'lebron james','hulk', 'la mujer maravilla',
  'la mujer bionica', 'el hombre araña', 'lebron james', 'hulk']
 
+data = [1,2,3,4,5,6,7,8,9]
 
-for item in reversed(range(7)):
-     print(item,end=' ')
-print()
+for index in range((len(data) // 2)):
+    data[index], data[-index - 1] = data[-index - 1], data[index]
 
-data = [0,1,2,3,4,5,6]
-data.reverse()
-for item in data:
-    print(item, end=' ')
-print()
+print(data)
 
 
-data = [0,1,2,3,4,5,6]
-for item in reversed(data):
-    print(item, end=' ')
-print()
+
+# for item in reversed(range(7)):
+#      print(item,end=' ')
+# print()
+
+# data = [0,1,2,3,4,5,6]
+# data.reverse()
+# for item in data:
+#     print(item, end=' ')
+# print()
+
+
+# data = [0,1,2,3,4,5,6]
+# for item in reversed(data):
+#     print(item, end=' ')
+# print()
 
 
 
